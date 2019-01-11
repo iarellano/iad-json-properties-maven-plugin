@@ -5,7 +5,7 @@
 
     <groupId>com.github.iarellano</groupId>
     <artifactId>iad-json-properties-maven-plugin</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>Properties loader from Json file</name>
@@ -14,6 +14,20 @@
         This mojo can import json files as properties using a pseudo-normalized json path as property names, it can
         also extract values using JsonPath and then assign the extracted values to project properties.
     </description>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Isaias Arellano Delgado</name>
+            <email>isaias.arellano.delgado@gmail.com</email>
+        </developer>
+    </developers>
 
     <distributionManagement>
         <snapshotRepository>
@@ -82,7 +96,6 @@
                 </configuration>
             </plugin>
 
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -97,6 +110,13 @@
                 </executions>
             </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                </configuration>
+            </plugin>
 
         </plugins>
     </build>
