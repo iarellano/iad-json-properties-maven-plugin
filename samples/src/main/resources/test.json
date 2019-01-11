@@ -1,0 +1,15 @@
+{
+  "name": "Maven Plugin",
+  "permanent": true,
+  "address": {
+    "street": "Ave. Independencia",
+    "city": "Aguascalientes",
+    "country": "Mexico",
+    "zipcode": 20116,
+    "array": [1, "anything?"],
+    "object": {
+      "one": "uno",
+      "two": "dos"
+    }
+  }
+}
