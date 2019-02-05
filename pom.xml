@@ -4,7 +4,7 @@
 
     <groupId>com.github.iarellano</groupId>
     <artifactId>iad-json-properties-maven-plugin</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>maven-plugin</packaging>
 
     <name>Properties loader from Json file</name>
@@ -46,7 +46,7 @@
         <connection>scm:git:git@github.com:iarellano/iad-json-properties-maven-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:iarellano/iad-json-properties-maven-plugin.git</developerConnection>
         <url>https://github.com/iarellano/iad-json-properties-maven-plugin</url>
-        <tag>json-properties-maven-plugin-1.0</tag>
+        <tag>iad-json-properties-maven-plugin-1.1</tag>
     </scm>
 
     <properties>
