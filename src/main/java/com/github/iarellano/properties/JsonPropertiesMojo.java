@@ -13,6 +13,7 @@ import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
+import org.apache.maven.project.MavenProject;
 import org.codehaus.plexus.util.FileUtils;
 import org.codehaus.plexus.util.StringUtils;
 
@@ -23,6 +24,8 @@ import java.util.*;
 public class JsonPropertiesMojo extends AbstractMojo
 {
 
+    @Parameter( defaultValue = "${project}", readonly = true, required = true )
+    private MavenProject project;
 
     /**
      *  Value to be prefixed to property names. e.g Given a json
@@ -77,7 +80,7 @@ public class JsonPropertiesMojo extends AbstractMojo
                 processJsonPaths(jsonPaths);
             }
 
-            System.getProperties().putAll(properties);
+            project.getProperties().putAll(properties);
         } catch (MojoExecutionException mee) {
             throw mee;
         } catch (IOException ioe) {

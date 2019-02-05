@@ -194,6 +194,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-core</artifactId>
+            <version>3.3.9</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 </project>
