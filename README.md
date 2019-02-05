@@ -1,4 +1,9 @@
 # iad-json-properties-maven-plugin
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.iarellano/iad-json-properties-maven-plugin.svg)](https://mvnrepository.com/artifact/com.github.iarellano/iad-json-properties-maven-plugin) 
+
+
 Support to import json files as project properties.
 
 ## About this plugin
@@ -10,7 +15,7 @@ A sample project is provided in the [samples](./samples) directory.
 <plugin>
     <groupId>com.github.iarellano</groupId>
     <artifactId>iad-json-properties-maven-plugin</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <executions>
         <execution>
             <id>parse-json-files</id>
