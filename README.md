@@ -66,7 +66,7 @@ This method makes use of [Jsonway Jsonpath](https://github.com/json-path/JsonPat
 <plugin>
     <groupId>com.github.iarellano</groupId>
     <artifactId>iad-json-properties-maven-plugin</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <executions>
         <execution>
             <id>extract-current-revision</id>
